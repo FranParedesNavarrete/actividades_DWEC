@@ -1,18 +1,20 @@
-let combinacion = [];
+let combinacion = new Array();
 
 for (let i = 0; i < 50; i++) {
-    let numRandom = (Math.random() * 49) + 1;
+    combinacion = new Array()
+    let numRandom = Math.floor(Math.random() * 49) + 1;
 
     for (let j = 0; j < 5; j++) {
         do {
-            numRandom = (Math.random() * 49) + 1;
+            numRandom = Math.floor(Math.random() * 49) + 1;
 
         } while (combinacion.some(function(num) {
             return num == numRandom;
         }))
-            
-        combinacion[i].push(numRandom);
+        combinacion.push(numRandom);
+
     }
-    console.log(combinacion)
+
+    console.log(combinacion);
 }
 
