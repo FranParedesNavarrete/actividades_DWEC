@@ -27,6 +27,6 @@ for (let number of numbers) {
 
 }
 
-for (let [key, value] of numOFNumbers) {
-    console.log('Número: ' + key + ': ' + value);
+for (let i = 1; i < 11; i++) {
+    console.log('Número: ' + i + ': ' + numOFNumbers.get(i));
 }
