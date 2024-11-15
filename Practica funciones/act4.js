@@ -1,8 +1,3 @@
-let esPar = x=>{
-    if (x%2 != 0) {
-        return false;
-    }
-    return true;
-}
+let esPar = x=> x%2 === 0;
 
-console.log(esPar(21));
+console.log(esPar(2));
